@@ -27,7 +27,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Welcome to <span className="text-green-500">EMONJOY Ghana</span>
+          Welcome to <span className="text-green-500">EMONJOY GHANA LTD</span>
         </motion.h1>
         <motion.p
           className="text-lg sm:text-xl text-gray-300 mt-4"
@@ -35,7 +35,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Revolutionizing Sustainable Farming with Edible Organic Pesticide and Fungicide.
+          Revolutionizing Sustainable Farming with 100% Organic/Natural Pesticide, Fungicide as well as insecticides for household use.
         </motion.p>
 
         {/* CTA Buttons */}

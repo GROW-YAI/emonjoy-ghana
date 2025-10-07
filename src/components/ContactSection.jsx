@@ -91,29 +91,37 @@ export default function ContactSection() {
             <p className="text-gray-700">Feel free to reach out to us for any inquiries or assistance. We’re here to help!</p>
             <motion.div whileHover={{ scale: 1.1 }} className="flex items-center space-x-4">
               <FaPhone className="text-green-600 text-xl animate-pulse" />
-              <span className="text-gray-800">024 153 4618</span>
+              <span className="text-gray-800">+233241534618/+233554544049</span>
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} className="flex items-center space-x-4">
               <FaEnvelope className="text-green-600 text-xl animate-pulse" />
-              <span className="text-gray-800">emonjoygh@gmail.com/emonjoyghana@gmail.com</span>
+              <span className="text-gray-800">emonjoyghana@gmail.com</span>
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-green-600 text-xl animate-pulse" />
-              <span className="text-gray-800">Cape Coast, Ghana</span>
+              <span className="text-gray-800">Cape Coast, Central Region, Ghana</span>
             </motion.div>
             {/* Social Icons */}
             <div className="flex space-x-4 text-green-600 text-2xl mt-4">
-              {[FaFacebook, FaTwitter, FaInstagram, FaLinkedin].map((Icon, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ y: -5 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="cursor-pointer hover:text-green-700 transition"
-                >
-                  <Icon />
-                </motion.div>
-              ))}
-            </div>
+  {[
+    { Icon: FaFacebook, link: "https://www.facebook.com/emonjoyghana" },
+    { Icon: FaInstagram, link: "https://www.instagram.com/emonjoy_ghana/" },
+    { Icon: FaLinkedin, link: "https://linkedin.com/company/emonjoyghana" },
+  ].map(({ Icon, link }, index) => (
+    <motion.a
+      key={index}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ y: -5 }}
+      whileTap={{ scale: 0.9 }}
+      className="cursor-pointer hover:text-green-700 transition"
+    >
+      <Icon />
+    </motion.a>
+  ))}
+</div>
+
           </motion.div>
         </motion.div>
       </div>

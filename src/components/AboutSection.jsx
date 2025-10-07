@@ -51,9 +51,7 @@ export default function ProductSection() {
           🌿 Our Premium Organic Products
         </motion.h2>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-12">
-        Our products are 100% Organic, Safe for your health and your plants. 
-        Also highly effective in keeping pests and diseases away from your crops. 
-        Enjoy Chemical-free farming experience while protecting the environment and human health.
+        We create 100% organic/natural solutions that are practically non-toxic, eco-friendly, safe for your health, plants and environment, yet highly effective. From protecting your crops against pests and diseases to keeping your home free from all crawling and flying insects, our natural pesticides, fungicides, and household insecticides give you a chemical-free way to protect what matters most; your health, your harvest, and your environment.
         </p>
 
         {/* Product Grid */}

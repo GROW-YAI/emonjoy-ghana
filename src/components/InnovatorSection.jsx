@@ -7,23 +7,24 @@ import innovator3 from "../assets/images/enoch.jpg";
 
 const innovators = [
   {
+    name: "Enoch Mbawin Alale",
+    role: "CEO & Co-Founder",
+    image: innovator3,
+    // bio: "A visionary leader  with Computer Science background, committed to revolutionizing sustainable farming in Ghana."
+  },
+  {
     name: "Simon Etornam Felitse",
-    role: "  IT & Operations Lead",
+    role: "CTO & Co-Founder",
     image: innovator1,
-    bio: "A visionary leader  with Computer Science background, committed to revolutionizing sustainable farming in Ghana."
+    // bio: " An Industrial Chemistry Background. Ensuring smooth operations and impactful execution of our sustainable solutions."
   },
   {
     name: "Agnes Joy Aryee",
-    role: "Marketing and Sales Lead ",
+    role: "HR & Co-Founder",
     image: innovator2,
-    bio: "A Background in Agribusiness, passionate about creating awareness and driving sales."
-  },
-  {
-    name: "Enoch Mbawin Alale",
-    role: "Team Lead",
-    image: innovator3,
-    bio: " An Industrial Chemistry Background. Ensuring smooth operations and impactful execution of our sustainable solutions."
+    // bio: "A Background in Agribusiness, passionate about creating awareness and driving sales."
   }
+  
 ];
 
 export default function InnovatorSection() {
