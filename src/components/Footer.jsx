@@ -10,13 +10,13 @@ function Footer() {
           {/* Brand Info */}
           <div>
             <h3 className="text-3xl font-bold tracking-wide text-white">
-              EMONJOY GHANA
+              EMONJOY GHANA LTD
             </h3>
             <p className="text-gray-400 mt-3 leading-relaxed">
             Revolutionizing Sustainable Farming with Organic Pesticides.
             </p>
             <p className="text-gray-500 mt-2">
-              &copy; {new Date().getFullYear()} Emonjoy Ghana. All rights reserved.
+              &copy; {new Date().getFullYear()} EMONJOY GHANA LTD. All rights reserved.
             </p>
           </div>
 
@@ -48,10 +48,10 @@ function Footer() {
             <p className="text-gray-400 mt-2">
               Email:{" "}
               <a
-                href="mailto:info@emonjoyghana.com"
+                href="mailto:emonjoyghana@gmail.com"
                 className="text-green-600 hover:underline"
               >
-                emonjoygh@gmail.com
+                emonjoyghana@gmail.com
               </a>
             </p>
             <p className="text-gray-400 mt-2">
