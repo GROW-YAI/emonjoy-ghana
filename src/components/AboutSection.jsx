@@ -1,40 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, CheckCircle, Leaf, ShieldCheck, Users } from "lucide-react";
-import productImage1 from "../assets/images/product5.jpg";
-import productImage2 from "../assets/images/product6.jpg";
-import productImage3 from "../assets/images/product7.jpg";
-import productImage4 from "../assets/images/product8.jpg";
+import productImage1 from "../assets/images/new product.jpg";
+import productImage2 from "../assets/images/np2.jpg";
 
 const products = [
   {
     id: 1,
     image: productImage1,
-    name: "250ml",
-    price: "120ghc",
+    name: "500ml",
+    price: "189ghc",
     link: "https://paystack.com/buy/organic-pesticide-mjgjmp",
   },
   {
     id: 2,
     image: productImage2,
-    name: "500ml",
-    price: "230ghc",
+    name: "1ltr",
+    price: "375ghc",
     link: "https://paystack.com/buy/eco-friendly-pest-repellent-fzrdxc",
   },
-  {
-    id: 3,
-    image: productImage3,
-    name: "1 litre",
-    price: "500ghc",
-    link: "https://paystack.com/buy/biodegradable-insect-killer-pebydx",
-  },
-  {
-    id: 4,
-    image: productImage4,
-    name: "1.5 litre",
-    price: "600ghc",
-    link: "https://paystack.com/buy/natural-plant-protector-pdbocn",
-  },
+  
 ];
 
 export default function ProductSection() {
@@ -55,29 +40,46 @@ export default function ProductSection() {
         </p>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {products.map((product) => (
-            <motion.div
-              key={product.id}
-              className="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center transform transition hover:scale-105"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <img src={product.image} alt={product.name} className="w-full max-w-[200px] h-auto rounded-lg mb-4" />
-              <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-              <p className="text-green-600 font-bold text-xl my-2">{product.price}</p>
-              <a
-                href={product.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
-              >
-                <ShoppingCart className="w-5 h-5 mr-2" /> Buy Now
-              </a>
-            </motion.div>
-          ))}
-        </div>
+        <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
+  {products.map((product, index) => (
+    <motion.div
+      key={product.id}
+      className="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center text-center hover:shadow-2xl transition-all w-full sm:w-80"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      whileHover={{ y: -8, scale: 1.02 }}
+    >
+      <div className="w-full aspect-square mb-6 overflow-hidden rounded-xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4">
+        <img 
+          src={product.image} 
+          alt={product.name} 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      
+      <h3 className="text-xl font-bold text-gray-800 mb-3">
+        {product.name}
+      </h3>
+      
+      <p className="text-green-600 font-bold text-2xl mb-6">
+        {product.price}
+      </p>
+      
+      <a
+        href={product.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full mt-auto inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:from-green-600 hover:to-green-700 transition-all transform hover:scale-105"
+      >
+        <ShoppingCart className="w-5 h-5 mr-2" />
+        Buy Now
+      </a>
+    </motion.div>
+  ))}
+</div>
+
+
 
         {/* Product Benefits */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
