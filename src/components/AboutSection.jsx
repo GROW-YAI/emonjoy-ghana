@@ -9,15 +9,15 @@ const products = [
     id: 1,
     image: productImage1,
     name: "500ml",
-    price: "189ghc",
-    link: "https://paystack.com/buy/organic-pesticide-mjgjmp",
+    price: "169ghc",
+    link: "https://paystack.shop/enigyie-aba-organic-product-500ml",
   },
   {
     id: 2,
     image: productImage2,
     name: "1ltr",
-    price: "375ghc",
-    link: "https://paystack.com/buy/eco-friendly-pest-repellent-fzrdxc",
+    price: "319ghc",
+    link: "https://paystack.shop/enigyie-aba-organic-product-1ltr",
   },
   
 ];
