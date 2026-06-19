@@ -46,7 +46,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <a
-            href="https://paystack.shop/emonjoy-ghana"
+            href="https://paystack.shop/emonjoy-ghana-market"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-transform transform hover:scale-105"
