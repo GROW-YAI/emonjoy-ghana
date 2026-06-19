@@ -9,15 +9,13 @@ const products = [
     id: 1,
     image: productImage1,
     name: "500ml",
-    price: "169ghc",
-    link: "https://paystack.shop/enigyie-aba-organic-product-500ml",
+    link: "https://paystack.shop/emonjoy-ghana-market",
   },
   {
     id: 2,
     image: productImage2,
     name: "1ltr",
-    price: "319ghc",
-    link: "https://paystack.shop/enigyie-aba-organic-product-1ltr",
+    link: "https://paystack.shop/emonjoy-ghana-market",
   },
   
 ];
@@ -62,9 +60,6 @@ export default function ProductSection() {
         {product.name}
       </h3>
       
-      <p className="text-green-600 font-bold text-2xl mb-6">
-        {product.price}
-      </p>
       
       <a
         href={product.link}
